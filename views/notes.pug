@@ -1,0 +1,15 @@
+extends layout 
+
+block content 
+    main
+        .notes-container 
+            h1 #{user.username}
+            ul.notes 
+                each note in notes 
+                    li
+                        a(href=`/notes/${note}`)= note
+            #note-form__buttons
+                a.note-form__button(href='/')
+                    i.fas.fa-plus
+                a.note-form__button(href='/logout')
+                    i.fas.fa-sign-out-alt

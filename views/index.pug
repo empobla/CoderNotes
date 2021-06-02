@@ -1,0 +1,38 @@
+extends layout 
+
+block content 
+    main
+        form#note-form(action='' method='post')
+            textarea#note-form__note(name='body' placeholder='Type something here.')= note ? note.body : ''
+            if note 
+                input#js-previousname(type='hidden' value=note.name)
+            #note-form__buttons
+                a.note-form__button(href='/notes')
+                    i.far.fa-user
+                a.note-form__button(href='/')
+                    i.fas.fa-plus
+                button.note-form__button#note-form__save(type='button')
+                    i.far.fa-save
+                if url != '/'
+                    button.note-form__button#note-form__edit(type='button')
+                        i.far.fa-edit
+                    button.note-form__button#note-form__delete(type='button')
+                        i.far.fa-trash-alt
+                a.note-form__button(href='/logout')
+                    i.fas.fa-sign-out-alt
+        #modal-bg
+            .modal
+                i.fas.fa-times.modal--close
+                .modal__content
+                    h1= `${url == '/' ? 'Save Note' : 'Update Note Name'}` 
+                    form.modal__save-form
+                        label(for='name') Note name: 
+                        input.form__input#js-note-name(type='text' name='name' required value=`${note ? note.name : ''}`)
+                        if url == '/'
+                            button.login__button#js-save-note(type='button') Save Note  
+                        else
+                            button.login__button#js-edit-note(type='button') Update Note Name  
+
+    //- Js-Cookie
+    script(src='https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js' defer)
+    script(src="/javascripts/note.js" defer)
