@@ -44,7 +44,8 @@ function saveNote() {
     .then(response => {
         if (response.status != 201) return console.error('Error saving note.');  
         window.location.assign(`/notes/${noteName}`);
-    });
+    })
+    .catch(e => console.error('Error saving note.'));
 };
 
 function quickSave() {
@@ -66,7 +67,8 @@ function quickSave() {
     .then(response => {
         saveButton.innerHTML = '<i class="far fa-save"></i>';
         if (response.status != 201) return console.error('Error quicksaving.');
-    });
+    })
+    .catch(e => console.error('Error quicksaving.'));
 };
 
 function updateName() {
@@ -86,7 +88,8 @@ function updateName() {
     .then(response => {
         if (response.status != 201) return console.error('Error saving note.');  
         window.location.assign(`/notes/${noteName}`);
-    });
+    })
+    .catch(e => console.error('Error saving note.'));
 };
 
 function deleteNote() {
@@ -107,5 +110,6 @@ function deleteNote() {
     .then(response => {
         if (response.status != 201) return console.error('Error deleting note.');
         window.location.assign('/');
-    });
+    })
+    .catch(e => console.error('Error deleting note.'));
 };

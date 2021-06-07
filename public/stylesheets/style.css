@@ -223,3 +223,117 @@ main {
   background-color: #0f0;
   font-weight: bold;
 }
+
+/***********************************************************/
+/********************** Media Queries **********************/
+/***********************************************************/
+@media (min-width: 0px) {
+  /********************** Note Form **********************/
+  #note-form__note {
+    margin-top: 100px;
+  }
+
+  /********************** Note buttons **********************/
+  #note-form__buttons {
+    flex-direction: row;
+    right: auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .note-form__button {
+    margin-right: 13px;
+  }
+  
+  .note-form__button:last-child {
+    margin-bottom: 26px;
+  }
+
+  .note-form__button i {
+    font-size: 15px;
+  }
+
+  /********************** Modals **********************/
+  .modal {
+    width: 60%;
+  }
+
+  /********************** Login/Signup **********************/
+  .page-header {
+    font-size: 50px;
+  }
+  
+  #login-grid {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 0 5%;
+    padding-bottom: 4em;
+  }
+
+  /********************** Notes **********************/
+  .notes-container > h1 {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 24px;
+  }
+
+  /********************** Note buttons **********************/
+  .note-form__button i {
+    font-size: 33px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /********************** Note Form **********************/
+  #note-form__note {
+    margin-top: 2%;
+  }
+
+  /********************** Note buttons **********************/
+  #note-form__buttons {
+    flex-direction: column;
+    right: 30px;
+    width: auto;
+    justify-content: stretch;
+  }
+
+  .note-form__button {
+    margin-right: 0;
+  }
+  
+  .note-form__button:last-child {
+    margin-bottom: 0;
+  }
+
+  /********************** Modals **********************/
+  .modal {
+    width: 30%;
+  }
+
+  /********************** Login/Signup **********************/
+  .page-header {
+    font-size: 100px;
+  }
+
+  #login-grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+    margin: 0 25%;
+    padding-bottom: 0;
+  }
+
+  /********************** Notes **********************/
+  .notes-container > h1 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1024px) and (pointer: fine) {
+  body {
+    font-size: 16px;
+  }
+}
