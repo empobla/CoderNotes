@@ -1,5 +1,5 @@
 # CoderNotes
-Coder Notes is a website which allows you to take notes online and save them.
+Coder Notes is a website which allows you to quickly take notes online and save them, having access to the notes quickly everywhere in the world.
 
 ## Author
 * Emilio Popovits Blake
