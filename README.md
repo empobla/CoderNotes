@@ -18,6 +18,8 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+[![Contributors][contributors-shield]][contributors-url]
+[![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -177,6 +179,10 @@ Project Link: [https://github.com/empobla/CoderNotes](https://github.com/empobla
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/empobla/CoderNotes.svg?style=for-the-badge
+[contributors-url]: https://github.com/empobla/CoderNotes/graphs/contributors
+[issues-shield]: https://img.shields.io/github/issues/empobla/CoderNotes.svg?style=for-the-badge
+[issues-url]: https://github.com/empobla/CoderNotes/issues
 [license-shield]: https://img.shields.io/github/license/empobla/CoderNotes?style=for-the-badge
 [license-url]: https://github.com/empobla/CoderNotes/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
