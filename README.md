@@ -26,10 +26,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/empobla/CoderNotes">
-    <p style="font: 50px monospace; margin: 0; color: #0f0;">Coder Notes</p>
-  </a>
-
 <h3 align="center">Coder Notes</h3>
 
   <p align="center">
